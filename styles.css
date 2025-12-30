@@ -1,0 +1,45 @@
+section ul{
+    position: relative;
+    
+}
+section ul::before{
+    position:absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    top:0;
+    width:2px;
+    background-color:black
+}
+section ul{
+    padding-left:40px;
+    list-style: none;
+
+}
+section ul li{
+    margin-bottom:32px;
+    position:relative;
+    
+
+}
+section ul li::before{
+    content:"";
+    position:absolute;
+    top:0.4em;
+    left:-40px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.Timeline-container{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.cta{
+    background: black;
+    color: white;
+    padding:12px 20px;
+    border-radius: 4px;
+}
